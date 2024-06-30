@@ -49,7 +49,7 @@ searchButton.addEventListener('click', () => {
 
   if (query) {
 
-    const apiKey = '6797551cf07dc3e1736ab1eca6ab1029';
+    const apiKey = 'xxxxxxx';
     fetch(`https://ws.audioscrobbler.com/2.0/?method=track.search&track=${query}&api_key=${apiKey}&format=json`)
     .then(response => response.json())
     .then(data => {
@@ -89,6 +89,7 @@ window.onload = ("DOMContentLoaded", function() {
         icon.addEventListener('click', function() {
             const currentSrc = this.src;
             if (currentSrc.includes(pauseSrc)) {
+              
                 this.src = playSrc;
             } else {
                 this.src = pauseSrc;
