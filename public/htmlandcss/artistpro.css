@@ -1,0 +1,412 @@
+body {
+  font-family: sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: black;
+}
+
+h2 {
+  color: #ccc;
+}
+
+.desktop-5 {
+  width: 100%;
+  position: relative;
+  background-color: var(--color-black);
+  height: 1024px;
+  overflow: hidden;
+  text-align: left;
+  font-size: var(--font-size-lgi);
+  color: var(--color-white);
+  font-family: var(--font-inter);
+}
+
+.all {
+  position: relative;
+}
+
+.all-wrapper,
+.music-wrapper {
+  border-radius: var(--br-xl);
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: var(--padding-3xs);
+}
+
+.all-wrapper {
+  width: 56px;
+  background-color: var(--color-white);
+}
+
+.music-wrapper {
+  width: 94px;
+  background-color: #bdb0b0;
+  border: 1px solid var(--color-black);
+}
+
+.frame-parent {
+  position: absolute;
+  top: 44px;
+  left: 250px;
+  width: 179px;
+  height: 47px;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 13px;
+  color: var(--color-black);
+}
+
+.search,
+.vector-icon {
+  position: absolute;
+  margin: 0 !important;
+}
+
+.search {
+  width: 73px;
+  top: 4px;
+  left: 16px;
+  display: inline-block;
+  z-index: 0;
+}
+
+.vector-icon {
+  width: 28px;
+  top: 7px;
+  left: 395px;
+  height: 28px;
+  z-index: 1;
+}
+
+.search-bar {
+  position: fixed;
+  top: 0;
+  left: 10px;
+  width: 50%;
+  z-index: 1;
+}
+
+.search-bar input[type="text"] {
+  width: 50%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+  background-color: rgb(56, 39, 56);
+}
+
+.c {
+  position: relative;
+  z-index: 0;
+}
+
+.logo,
+.m {
+  position: absolute;
+}
+
+.m {
+  width: 33px;
+  margin: 0 !important;
+  top: 21px;
+  left: 12px;
+  font-size: 40px;
+  font-family: var(--font-inspiration);
+  display: inline-block;
+  z-index: 1;
+}
+
+.logo {
+  top: 48px;
+  left: 22px;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+
+.frame-child {
+  width: 31.9px;
+  position: relative;
+  height: 30.2px;
+}
+
+.vector-icon1,
+.vector-icon2 {
+  width: 29px;
+  position: relative;
+  height: 24px;
+}
+
+.vector-icon2 {
+  width: 26px;
+  height: 30px;
+}
+
+.vector-icon3,
+.vector-icon4 {
+  width: 28px;
+  position: relative;
+  height: 27px;
+}
+
+.vector-icon4 {
+  width: 30.5px;
+  height: 30.1px;
+}
+
+.group-parent {
+  position: absolute;
+  top: 175px;
+  left: 5px;
+  width: 82px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 47px;
+}
+
+.frame-item {
+  width: 43px;
+  position: relative;
+  border-radius: 50%;
+  background-color: #d9d9d9;
+  height: 43px;
+}
+
+.ellipse-parent {
+  position: absolute;
+  top: 1197px;
+  left: 24px;
+  height: 89px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 7px;
+  font-size: var(--font-size-5xs);
+  color: var(--color-maroon);
+  font-family: var(--font-inter);
+}
+
+.logo-parent {
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: #1b1730;
+  width: 91px;
+  height: 1306px;
+  overflow: hidden;
+  font-size: 50px;
+  font-family: var(--font-ingrid-darling);
+}
+
+.main {
+  display: flex;
+  grid-template-columns: 200px 1fr 200px;
+}
+
+.content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.image-container img {
+  max-width: 250px;
+  max-height: 300px;
+}
+
+.photo-container {
+  width: 70%;
+  margin: 0px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  grid-gap: 50px;
+  align-self: center;
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 20px;
+  grid-template-columns: 1fr;
+  justify-items: center;
+}
+
+.photo-container img {
+  width: 70px;
+  height: 150px;
+}
+
+.photo-container img {
+  border-radius: 10px;
+  transition: transform 0.2s ease-in-out;
+}
+
+.discover-artist {
+  width: 100%;
+  border-radius: 5px;
+  text-align: center;
+  background-color: black;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+section {
+  padding: 20px;
+}
+
+.sidebar-right {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 15%;
+  height: 100vh;
+  overflow-y: auto;
+  display: flex;
+  background-color: #1b1730;
+  color: #bdb0b0;
+}
+
+table {
+  border-collapse: separate;
+  border-spacing: 20px;
+}
+
+.photo-container img:hover {
+  transform: scale(1.05);
+}
+
+.photo {
+  position: relative;
+}
+
+.photo img {
+  width: 100%;
+  object-fit: cover;
+}
+
+.overlay-text {
+  position: relative;
+  bottom: 0;
+  left: 0;
+  width: 50%;
+  padding: 5px;
+  color: white;
+  font-size: 0.8em;
+  text-align: center;
+  display: flex;
+  align-items: flex-end;
+}
+
+.left, .herm, .c, .m, .frame-child, .vector-icon1, .vector-icon2, .vector-icon3, .vector-icon4 {
+  filter: invert(1);
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+  .frame-parent {
+      top: 20px;
+      left: 20px;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+  }
+
+  .search-bar {
+      position: fixed;
+      top: 10px;
+      left: 10px;
+      width: 80%;
+  }
+
+  .search-bar input[type="text"] {
+      width: 100%;
+  }
+
+  .logo-parent {
+      width: 100%;
+      height: auto;
+      display: flex;
+      justify-content: space-between;
+      padding: 10px;
+  }
+
+  .group-parent {
+      top: 100px;
+      left: 0;
+      width: 100%;
+      flex-direction: row;
+      justify-content: space-around;
+      gap: 10px;
+  }
+
+  .sidebar-right {
+      width: 100%;
+      height: auto;
+      position: relative;
+      top: auto;
+      right: auto;
+      flex-direction: row;
+      justify-content: space-around;
+  }
+
+  .photo-container {
+      width: 100%;
+      grid-gap: 20px;
+  }
+
+  .photo-container img {
+      width: 100%;
+      height: auto;
+  }
+
+  .discover-artist {
+      background-size: contain;
+  }
+}
+
+@media (max-width: 480px) {
+  .frame-parent {
+      top: 10px;
+      left: 10px;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 5px;
+  }
+
+  .search-bar {
+      width: 90%;
+  }
+
+  .search-bar input[type="text"] {
+      font-size: 14px;
+  }
+
+  .group-parent {
+      top: 80px;
+      gap: 5px;
+  }
+
+  .sidebar-right {
+      width: 100%;
+      flex-direction: column;
+      align-items: center;
+  }
+
+  .photo-container {
+      flex-direction: column;
+      align-items: center;
+      grid-gap: 10px;
+  }
+
+  .photo-container img {
+      width: 100%;
+  }
+}

@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music Genere</title>
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="genere.css">
+</head>
+<body>
+    <div class="sidebar">
+        <!-- <div class="logo"><span class="c">C</span><span class="m">M</span></div> -->
+        <img class="frame-child" src="/img/wqdkjl.png" data-info="logo"/>
+        <div class="group-parent">
+            <div class="sidebar-item" data-info="Home">
+                <a href="/public/htmlandcss/home.html"><img class="frame-child" alt="Home" src="/icons/home-alt-3-svgrepo-com.svg" /></a>
+            </div>
+            <div class="sidebar-item" data-info="Album">
+                <a href="/public/htmlandcss/album.html"><img class="vector-icon1" alt="Album" src="/icons/album-svgrepo-com.svg" /></a>
+            </div>
+            <div class="sidebar-item" data-info="Artist">
+                <a href="/public/htmlandcss/artistprofile.html"><img class="vector-icon2" alt="Artist" src="/icons/music-artist-svgrepo-com.svg" /></a>
+            </div>
+            <div class="sidebar-item" data-info="Favorites">
+               <a href="/public/htmlandcss/favorite.html"> <img class="vector-icon3" alt="Favorites" src="/icons/love-svgrepo-com.svg" /> </a>
+            </div>
+            <div class="sidebar-item" data-info="Genre">
+                <a href="/public/htmlandcss/genere.html"><img class="vector-icon4" alt="Library" src="/icons/bookshelf-with-fout-books-svgrepo-com.svg" /></a>
+            </div>
+        </div>
+    </div>
+    <div class="main-content">
+        <div class="content">
+            <h2>Genre</h2>
+            <div class="genre-grid">
+                <div class="image-container"><img src="/img/Rap.png" id="playSongImage1" alt="Rap"></div>
+                <div class="image-container"><img src="/img/acoustic.png" id="playSongImage2" alt="Acoustic"></div>
+                <div class="image-container"><img src="/img/jazz.png" id="playSongImage3" alt="Jazz"></div>
+                <div class="image-container"><img src="/img/randb.png" id="playSongImage4" alt="R&B"></div>
+                <div class="image-container"><img src="/img/sol.png" id="playSongImage5" alt="Soul"></div>
+                <div class="image-container"><img src="/img/ragge.png" id="playSongImage1" alt="Reggae"></div>
+            </div>
+            <h2>Celestial Mix</h2>
+            <div class="mix-grid">
+                <div class="image-container"><img src="/img/mix1.png" id="playSongImage4" alt="Mix 1"></div>
+                <div class="image-container"><img src="/img/mix2.png" id="playSongImage5" alt="Mix 2"></div>
+                <div class="image-container"><img src="/img/mix3.png" id="playSongImage6" alt="Mix 3"></div>
+            </div>
+        </div>
+    </div>
+    <div class="now-playing">
+        <img class="main-image" src="/img/tylaalbum.png" alt="Now Playing">
+        <div class="play-pause">
+          <i class="fas fa-play" style="font-size:40px;"></i>
+        </div>
+        <div class="track-info">
+            <h3>Amazing Grace</h3>
+            <p>Artist Name</p>
+        </div>
+        <div class="queue">
+            <div class="queue-item" data-artist="Taylor Swift" data-title="Lover" data-image="https://via.placeholder.com/150">
+                <img class="queue-image" src="/img/taylor.png" alt="Taylor Swift">
+                <div class="queue-text">Taylor Swift - Lover</div>
+            </div>
+            <div class="queue-item" data-artist="Justin Bieber" data-title="Intentions" data-image="https://via.placeholder.com/150">
+                <img class="queue-image" src="/img/justin.png" alt="Justin Bieber">
+                <div class="queue-text">Justin Bieber - Intentions</div>
+            </div>
+            <div class="queue-item" data-artist="Taylor Swift" data-title="Cruel Summer" data-image="https://via.placeholder.com/150">
+                <img class="queue-image" src="/img/taylor.png" alt="Taylor Swift">
+                <div class="queue-text">Taylor Swift - Cruel Summer</div>
+            </div>
+            <div class="queue-item" data-artist="Shawn Mendes" data-title="Treat You Better" data-image="https://via.placeholder.com/150">
+                <img class="queue-image" src="/img/shwan.png" alt="Shawn Mendes">
+                <div class="queue-text">Shawn Mendes - Treat You Better</div>
+            </div>
+            <div class="queue-item" data-artist="Tyla Laura" data-title="Jump" data-image="https://via.placeholder.com/150">
+                <img class="queue-image" src="/img/tyla.png" alt="Tyla Laura">
+                <div class="queue-text">Tyla Laura - Jump</div>
+              </div>
+            </div>
+        </div>
+        <div id="popup"></div>
+        <script src="genere.js"></script>
+    </body>
+    </html>

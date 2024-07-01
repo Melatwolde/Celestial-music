@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <title>Favorite</title>
+    <link rel="stylesheet" href="favorite.css">
+</head>
+<body>
+    <nav class="sidebar">
+        <div class="logo-container">
+          <img class="frame-child" src="/img/wqdkjl.png" data-info="Home"/>
+        </div>
+        <a href="/public/htmlandcss/home.html" class="nav-item">
+            <img src="/icons/home-alt-3-svgrepo-com.svg" alt=" ">
+            <span class="tooltiptext">Home</span>
+        </a>
+        <a href="/public/htmlandcss/album.html" class="nav-item">
+            <img src="/icons/album-svgrepo-com.svg" alt=" ">
+            <span class="tooltiptext">Album</span>
+        </a>
+        <a href="/public/htmlandcss/artistprofile.html" class="nav-item">
+            <img src="/icons/music-artist-svgrepo-com.svg" alt=" ">
+            <span class="tooltiptext">Artist</span>
+        </a>
+        <a href="/public/htmlandcss/favorite.html" class="nav-item">
+            <img src="/icons/love-svgrepo-com.svg" alt="">
+            <span class="tooltiptext">Favorites</span>
+        </a>
+        <a href="/public/htmlandcss/genere.html" class="nav-item">
+            <img src="/icons/bookshelf-with-fout-books-svgrepo-com.svg" alt="">
+            <span class="tooltiptext">Genre</span>
+        </a>
+    </nav>
+
+    <div class="main-content">
+        <header>
+            <div class="header-content">
+                <div class="image-box">
+                    <img src="/img/purpleheart.png" alt="Artist Image">
+                </div>
+                <div class="header-text">
+                    <h1>Favorites</h1>
+                    <p>61 liked songs</p>
+                </div>
+                <div id="playPauseBtn" class="play-pause-btn">
+                  <i class="fas fa-play"></i> <!-- Play Icon -->
+                </div>
+            </div>
+        </header>
+        <div class="container">
+            <h2>Favorites</h2>
+            <div class="favorite-list">
+              <audio id="audioPlayer"></audio>
+                <div class="favorite-item">
+                    <img src="/img/bili.png" alt="Favorite 1"id="playSongImage1">
+                    <div class="info">
+                        <h3>Lover</h3>
+                        <p>Taylor Swift</p>
+                    </div>
+                </div>
+                <div class="favorite-item">
+                    <img src="/img/snoop.png" alt="Favorite 2"id="playSongImage2">
+                    <div class="info">
+                        <h3>Intentions</h3>
+                        <p>Justin Bieber</p>
+                    </div>
+                </div>
+                <div class="favorite-item">
+                    <img src="/img/taylor.png" alt="Favorite 3"id="playSongImage3">
+                    <div class="info">
+                        <h3>Cruel Summer</h3>
+                        <p>Taylor Swift</p>
+                    </div>
+                </div>
+                <div class="favorite-item">
+                    <img src="/img/mabu.png" alt="Favorite 4"id="playSongImage4">
+                    <div class="info">
+                        <h3>Treat You Better</h3>
+                        <p>Shawn Mendes</p>
+                    </div>
+                </div>
+                <div class="favorite-item">
+                    <img src="/img/tyla.png" alt="Favorite 5" id="playSongImage5">
+                    <div class="info">
+                        <h3>Jump</h3>
+                        <p>Tyla Laura</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="favorite.js"></script>
+</body>
+</html>

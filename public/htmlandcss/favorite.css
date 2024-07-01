@@ -1,0 +1,256 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #1d1d1d;
+  display: flex;
+  height: 100vh;
+  color: white;
+}
+
+.sidebar {
+  display: flex;
+  flex-direction: column;
+  background-color: #1b1730;
+  padding: 10px 0;
+  width: 80px;
+  align-items: center;
+  position: fixed;
+  height: 100vh;
+  z-index: 1000;
+}
+.logo {
+  font-family: 'Great Vibes', cursive; /* Use the Great Vibes cursive font */
+  font-size: 40px; /* Adjust font size as needed */
+}
+
+.logo .c, .logo .m {
+  display: inline-block;
+}
+
+.logo-container {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.c, .m {
+  text-decoration: none;
+  color: white;
+  display: inline-block;
+  font-family: 'Great Vibes', cursive;
+  font-size: 36px;
+}
+.frame-child{
+  height: 60px;
+  width: 60px;
+}
+
+.nav-item {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 10px 0;
+}
+
+.nav-item img {
+  width: 30px;
+  height: 30px;
+  filter: brightness(0) invert(1);
+}
+
+.tooltiptext {
+  visibility: hidden;
+  width: 100px;
+  background-color: #000;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 0;
+  font-size: 12px;
+  position: absolute;
+  z-index: 2000;
+  left: 60px;
+  top: 50%;
+  transform: translateY(-50%);
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+.nav-item:hover .tooltiptext {
+  visibility: visible;
+  opacity: 1;
+}
+
+.main-content {
+  margin-left: 80px;
+  width: calc(100% - 80px);
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 20px;
+  z-index: 1;
+}
+
+.search-box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  max-width: 500px;
+  height: 40px;
+  background-color: #444;
+  border-radius: 25px;
+  padding: 10px;
+  margin: 20px auto;
+}
+
+.search-box input {
+  width: calc(100% - 40px);
+  height: 100%;
+  padding: 10px;
+  border: none;
+  outline: none;
+  background-color: transparent;
+  color: white;
+  font-size: 16px;
+}
+
+.search-box img {
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+}
+
+header {
+  background: linear-gradient(45deg, #800080, #b19cd9);
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 20px;
+  margin-bottom: 20px;
+  color: rgb(248, 248, 248);
+  z-index: 1;
+}
+
+.header-content {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  justify-content: flex-start;
+  margin-top: 20px;
+}
+
+.image-box {
+  position: relative;
+  width: 200px;
+  height: 200px;
+  margin-right: 20px;
+  overflow: hidden;
+}
+
+.image-box img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.header-text {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-left: 20px;
+}
+
+.header-text h1 {
+  font-size: 24px;
+  margin: 0;
+}
+
+.header-text p {
+  font-size: 16px;
+  margin: 5px 0 0;
+}
+
+.container {
+  padding: 0 20px;
+  width: 100%;
+  max-width: calc(100% - 80px);
+}
+
+h2 {
+  margin: 10px 0;
+  color: rgb(255, 255, 255);
+}
+
+.favorite-list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: 100%;
+}
+
+.favorite-item {
+  background-color: #75316593;
+  border: 1px solid #31113d;
+  border-radius: 10px;
+  overflow: hidden;
+  width: 100%;
+  height: 60px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  display: flex;
+  align-items: center;
+  padding: 0 10px;
+  color: rgb(255, 246, 246);
+  position: relative;
+  transition: transform 0.2s ease-in-out;
+}
+
+.favorite-item:hover {
+  transform: scale(1.05);
+}
+
+.favorite-item img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  margin-left: 10px;
+  object-fit: cover;
+}
+
+.favorite-item .info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-left: 15px;
+}
+
+.favorite-item .info h3 {
+  margin: 0;
+  font-size: 18px;
+}
+
+.favorite-item .info p {
+  margin: 0;
+  color: #dfc6c6;
+  font-size: 14px;
+}
+
+.play-pause-btn {
+  cursor: pointer;
+  font-size: 50px; /* Adjust size as needed */
+  color: #ffffff; /* Adjust color as needed */
+  
+}
+/* @media screen and (max-width: 1000px) {
+  .nav-item img {
+    width: 25px;
+    height: 25px;
+  }} */
+    

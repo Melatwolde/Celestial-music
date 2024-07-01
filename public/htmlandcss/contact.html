@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Signup</title>
+        <link rel="stylesheet" href="contact.css">
+       
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+
+
+    </head>
+    <body>
+        <div class="container">
+            <form onsubmit="sendEmail(); reset(); return false; ">
+                <h1> Contact Us</h1>
+                <label for="text">Name</label>
+                <input type="text" id="name"placeholder="Your Name" required>
+                <label for="email">Email</label>
+                <input type="email" id="email"placeholder="Your Email"required>
+                <label for="message">Message</label>
+                <textarea type="message" id="message" placeholder="Write any comment"></textarea>
+                <button type="submit"> Send </button>
+            </form>
+        </div>
+        <script src="https://smtpjs.com/v3/smtp.js"></script>
+        <script>
+          function sendEmail(){
+            Email.send({
+                  SecureToken:"b1a622ff-3f40-4f6d-a640-819b5bcbeb24 ",
+                  //  Host : "smtp.elasticemail.com",
+                  //  Username : "elibethelmaru8@gmail.com",
+                  //  Password : "7DD6AF40B5E826F0ED28491A511F1EB9D927",
+                   To : 'elibethelm@gmail.com',
+                   From : document .getElementById("email").value,
+                   Subject : "New Contact Form Enquiry",
+                   Body : "Name: " + document.getElementById("name").value +"<br> Email:"
+                   + document.getElementById("email").value +
+                   "<br> Message:" + document.getElementById("message").value
+}).then(
+  message => alert("Message sent successfull")
+);
+          }
+        </script>
+        </body>
+</html>
