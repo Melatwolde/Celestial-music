@@ -3,7 +3,7 @@ const path = require('path');
 const app = express();
 
 // Corrected static path
-const staticPath = path.join('C:', 'Users', 'j', 'Desktop', 'hakimhub icons', 'htmlandcss', 'img');
+const staticPath = path.join('C:', 'Users', 'j', 'Desktop', 'xxxx', 'htmlandcss', 'img');
 
 // Serve static files from corrected path
 app.use(express.static(staticPath));
