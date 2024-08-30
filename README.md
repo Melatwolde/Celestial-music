@@ -2,16 +2,6 @@
 
 Celestial Music is a web application that allows users to explore, listen to, and manage their favorite music. Built with HTML, CSS, JavaScript, and NestJS, it leverages MongoDB for data storage, JWT for authentication, and integrates with free music APIs and Cloudinary for media management.
 
-## Table of Contents
-
-- [Features](#features)
-- [Technologies Used](#technologies-used)
-- [Installation](#installation)
-- [Usage](#usage)
-- [API Endpoints](#api-endpoints)
-- [Contributing](#contributing)
-- [License](#license)
-
 ## Features
 
 - User authentication with JWT
